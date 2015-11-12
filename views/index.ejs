@@ -1,11 +1,256 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+
+  <title>Austin Web Dev Bootcamps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Austin Web Dev Bootcamps</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#topics">TOPICS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#login">LOG IN</a></li>
+        <!-- <li><a href="#prepQuiz">PREP QUIZZES</a></li> -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">SCHOOL LINKS
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://generalassemb.ly/">General Assembly</a></li>
+            <li><a href="http://www.galvanize.com/">Galvanize</a></li>
+            <li><a href="http://www.makersquare.com/">MakerSquare</a></li>
+            <li><a href="http://theironyard.com/">The Iron Yard</a></li>  
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/Austin+Skyline+-+BG.jpg" alt="Austin" width="1200" height="600">
+        <div class="carousel-caption">
+          <h3>Austin</h3>
+          <p>Live Here, Code Here!</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="images/soco1.jpeg" alt="CongressAve" width="1200" height="600">
+        <div class="carousel-caption">
+          <h3>Congress Avenue</h3>
+          <p>Home for Bootcampers</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="images/aerialviewzilker.jpg" alt="Zilker" width="1200" height="600">
+        <div class="carousel-caption">
+          <h3>Zilker Park</h3>
+          <p>Take a break from coding</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<div id="Intro" class="container text-center">
+  <h3>Learn To Code</h3>
+  <p><em>The hands on help you need is here in Austin</em></p>
+  <p>The online space is saturated with excellent tutorials on every aspect of coding - so why take a bootcamp?  Not only do you need coding skills to launch your career in the web development world, you need a community of support and contacts. Let's look at the current available options.</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-3">
+      <p class="text-center"><strong>General Assembly</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="images/ga-logo-2-compressor.png" class="img-circleperson" alt="GA" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p>Web Development Immersive</p>
+        <p>User Experience Immersive</p>
+        <p>Andriod and Product Mgmt - Coming Soon</p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <p class="text-center"><strong>MakerSquare</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="images/makersquare-logo.png" class="img-circleperson" alt="MakerSquare" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>Javascript Focused</p>
+        <p>A Hack Reactor Core School</p>
+        <p>Advertised as Highly Selective</p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <p class="text-center"><strong>Iron Yard</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="images/the-iron-yard-logo.png" class="img-circleperson" alt="IronYard" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>Front End Engineering</p>
+        <p>Rails Engineering</p>
+        <p>User Interface Design</p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <p class="text-center"><strong>Galvanize</strong></p><br>
+      <a href="#demo4" data-toggle="collapse">
+        <img src="images/1982192-823446997671475-891607919-n.png" class="img-circleperson" alt="GA" width="255" height="255">
+      </a>
+      <div id="demo4" class="collapse">
+        <p>Full Stack 6 mth Immersive</p>
+        <p>Data Science 3 mth Immersive</p>
+        <p>MEAN Stack focused</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<div id="API" class="container text-center">
+  <h2>Austin Job Boards</h2>
+ <div class="row">
+    <div class="col-sm-12">
+      <p>Indeed</p>
+        <div class="indeed">
+         <script type="text/javascript">
+              <!--
+              indeed_jobroll_title = 'web development jobs in austin, tx';
+              indeed_jobroll_background_color = "#FFFFFF";
+              indeed_jobroll_width = "150px";
+              indeed_jobroll_text_font = "10px Arial, Helvetica, Sans serif";
+              indeed_jobroll_link_color = "#000000";
+              indeed_jobroll_border = "1px solid #000000";
+              //-->
+          </script>
+          <script type="text/javascript" src="http://www.indeed.com/jobroll?q=web+development&l=austin%2C+tx&limit=10">
+          </script>
+          <noscript><a href="http://www.indeed.com/">Jobs</a> by Indeed</noscript>
+        </div>
+
+    <!-- </div>
+    <div class="col-sm-4">
+      <p>Dice</p>
+    </div>
+    <div class="col-sm-4">
+      <p>AngelList</p>
+    </div> -->
+    <br>
+
+
+<!-- Container (Dates Section) -->
+<!-- <div id="dates" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">Upcoming Immersive Dates</h3>
+    <p class="text-center">Applications require Interviews and Prep Work.<br> Remember to start early!<br><br></p>
+    <ul class="list-group">
+      <li class="list-group-item">January</li>
+      <li class="list-group-item">February</li> 
+      <li class="list-group-item">March<span class="badge">3</span></li> 
+    </ul>
+  </div>   -->
+    
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="chart">
+          <img src="images/Most-In-Demand-Programming-Jobs.png" alt="chart1" width="400" height="300">
+          <p><strong>Most In Demand Programming Languages of 2015</strong></p>
+          <p>*curtesy of Dice.com data</p>
+        </div>
+      </div>
+   
+      <div class="col-sm-6">
+        <div class="chart">
+          <img src="images/skillgraph.jpg" alt="skillgraph" width="400" height="300">
+          <p><strong>Jobs Require Multiple Skillsets</strong></p>
+          <p>*via skilledup.com</p>
+        </div>
+      </div>
+     </div> 
+  </div>
+    <br>
+
+    
+
+
+<div id="googleMap">Area Bootcamp Locations</div>
+
+ <div id="Blog" class="container">
+  <h3 class="text-center">From The Blog</h3>  
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+
+    
+  </div>
+</div>
+  <br>
+
+<footer class="text-center"> 
+
+  <div class="row">
+    <div class="col-md-6">
+      
+      <h5>Contact</h5>
+      <p><span class="glyphicon glyphicon-envelope"></span></p>
+      <p>austinwebdevbootcamps@gmail.com</p>    
+    </div>
+
+    <div class="col-md-6">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP"> 
+    <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>TO TOP<p>
+    <br>
+    <p>Created by Kim Dilling</p> 
+  
+    </div>
+  </div>
+</footer>
+</div>
+</body>
 </html>

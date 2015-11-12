@@ -27,7 +27,7 @@
   }
   .carousel-caption h3 {
       color: #fff !important;
-      text-align: right;
+      text-align: center;
   }
   @media (max-width: 600px) {
     .carousel-caption {
@@ -121,7 +121,8 @@
   footer {
       background-color: #2d2d30;
       color: #f5f5f5;
-      padding: 32px;
+      padding: 20px;
+      text-align: center;
   }
   footer a {
       color: #f5f5f5;
@@ -136,6 +137,15 @@
   textarea {
       resize: none;
   }
+  /*.indeed {
+          indeed_jobroll_title = 'web developer jobs in austin, tx';
+          indeed_jobroll_background_color = "#FFFFFF";
+          indeed_jobroll_width = "150px";
+          indeed_jobroll_text_font = "10px Arial, Helvetica, Sans serif";
+          indeed_jobroll_link_color = "#000000";
+          indeed_jobroll_border = "1px solid #000000";
+          
+  }*/
   /*style for user sign in
   div.form-container{
     display: inline-block;
